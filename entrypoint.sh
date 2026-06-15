@@ -1,6 +1,5 @@
 #!/bin/sh
 
-set -e
 # Get the GitHub Token and Giphy API Key from GitHub Action inputs
 GITHUB_TOKEN=$1
 GIPHY_API_KEY=$2
@@ -10,7 +9,7 @@ pull_request_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
 echo PR Number - $pull_request_number
 
 # Use the Giphy API to fetch a random Thank You GIF
-giphy_response=$(curl -s "https://api.giphy.com/v1/gifs/random?api_key=$GIPHY_API_KEY&tag=&rating=g")
+giphy_response=$(curl -s "https://api.giphy.com/v1/gifs/random?api_key=$GIPHY_API_KEY&tag=thank+you&rating=g")
 echo Giphy Response - $giphy_response
 
 # Extract the GIF URL from the Giphy response
