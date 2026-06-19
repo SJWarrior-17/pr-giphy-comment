@@ -18,4 +18,4 @@ jobs:
         uses: ./
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          giphy-api-key: ${{ secrets.GIPHY_API_KEY }}
+          giphy-api-token: ${{ secrets.GIPHY_API_TOKEN }}
