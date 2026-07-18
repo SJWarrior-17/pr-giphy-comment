@@ -1,0 +1,21 @@
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  testing-action:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Post PR Comment - JS Actions
+        uses: SJWarrior-17/sj_test-giphy-pr-comments@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          giphy-api-token: ${{ secrets.GIPHY_API_TOKEN }}
