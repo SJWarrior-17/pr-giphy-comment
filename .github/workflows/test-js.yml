@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Post PR Comment - JS Actions
-        uses: SJWarrior-17/sj_test-giphy-pr-comments@main
+        uses: SJWarrior-17/js_pr-giphy-comment@alpha-v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           giphy-api-token: ${{ secrets.GIPHY_API_TOKEN }}
