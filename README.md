@@ -10,3 +10,5 @@ For demo purposes, add this comment3.
 For demo purposes, add this comment4.
 
 For demo purposes, add this comment5.
+
+Adding a comment to test JS Custom Action.
