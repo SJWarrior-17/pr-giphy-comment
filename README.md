@@ -18,3 +18,5 @@ Adding a comment-1 to test JS Custom Action.
 Adding a comment-2 to test JS Custom Action.
 
 Adding a comment-3 to test JS Custom Action.
+
+Adding a comment-4 to test JS Custom Action.
